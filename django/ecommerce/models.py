@@ -36,22 +36,3 @@ from django.db import models
 
 # Student1 = Student("anu",20,6)
 # Student1.greet()
-
-class Animal():
-    def speak(self):
-        print("Animal function invoked")
-
-
-class Dog(Animal):
-    def speak(self):
-        print("dog class function invoked")
-
-    def parentSpeak(self):
-        super().speak()
-
-
-animal = Animal()
-animal.speak()  # animal function invoked
-
-dog = Dog()
-dog.parentSpeak()  # animal function invoked
